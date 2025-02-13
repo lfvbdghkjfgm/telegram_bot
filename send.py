@@ -1,9 +1,10 @@
 from telebot import apihelper
 import sqlite3 as sq
 import telebot
+from os import getenv
+from dotenv import load_dotenv,find_dotenv
 
 from admin import send_to_me
-from config import TOKEN
 
 load_dotenv(find_dotenv())
 
