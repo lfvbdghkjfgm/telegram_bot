@@ -5,7 +5,9 @@ import telebot
 from admin import send_to_me
 from config import TOKEN
 
-bot = telebot.TeleBot(TOKEN)
+load_dotenv(find_dotenv())
+
+bot = telebot.TeleBot(getenv('TOKEN'))
 
 
 def send_mess(ID, text, but):
